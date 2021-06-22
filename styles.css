@@ -1,5 +1,5 @@
 body{
-    background-color: #b0a192;
+    background-color: #FFFBF7;
 }
 
 
@@ -18,6 +18,15 @@ li {
     font-size: 0;
     height: 45px;
 }
+
+.fixed-header{
+    position: fixed;
+    background-color: blanchedalmond;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .header > * {
     display: inline-block;
     font-size: 16px;
@@ -90,7 +99,14 @@ p {
     width: 50%;
     padding: 16px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.img-video {
+    width: 30%;
+    height: 50px;
 }
 
 .texto {
@@ -113,7 +129,7 @@ p {
 
 .input {
     height: 42px;
-    border: none;
+    border: 1px solid #8b8b8bcc;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 0px 0px 0px 8px
@@ -124,7 +140,7 @@ p {
     background-image: url();
     color: #fff;
     border: none;
-    height: 42px;
+    height: 44px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     position: absolute;
