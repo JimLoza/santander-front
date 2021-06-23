@@ -1,7 +1,10 @@
-body{
-    background-color: #FFFBF7;
+* {
+    margin: 0;
 }
 
+body {
+    background-color: #FFFBF7;
+}
 
 li {
     display: inline;
@@ -19,7 +22,7 @@ li {
     height: 45px;
 }
 
-.fixed-header{
+.fixed-header {
     position: fixed;
     background-color: blanchedalmond;
     top: 0;
@@ -27,7 +30,7 @@ li {
     right: 0;
 }
 
-.header > * {
+.header>* {
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
@@ -52,15 +55,15 @@ li {
     font-size: 14px;
 }
 
-.actions > * {
+.actions>* {
     margin: 0 10px;
 }
 
-.actions a{
+.actions a {
     color: #67b54b;
 }
 
-.actions button{
+.actions button {
     background-color: #67b54b;
     color: white;
     padding: 14px 12px;
@@ -68,15 +71,15 @@ li {
     border-radius: 5px;
 }
 
-.navbar > * {
+.navbar>* {
     font-family: sans-serif;
 }
 
 h1 {
-    color: blueviolet;
+    /* color: blueviolet; */
 }
 
-h2 { 
+h2 {
     color: #46484c;
 }
 
@@ -87,10 +90,13 @@ p {
 .btn {
     background-color: #025157;
     background-image: url();
+    border: none;
     color: #fff;
+    height: 30px;
+    border-radius: 5px;
 }
 
-.publicitario{
+.publicitario {
     display: flex;
     justify-content: center;
 }
@@ -114,7 +120,7 @@ p {
     padding: 16px;
 }
 
-#titulo-publicitario{
+#titulo-publicitario {
     color: #025157;
     font-family: sans-serif;
     font-size: 32px;
@@ -144,4 +150,108 @@ p {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     position: absolute;
+}
+
+.section-postwork {
+    background-color: #a1d683;
+    display: flex;
+    height: 90vh;
+    width: 99vw;
+}
+.text-img{
+    width: 70%;
+}
+
+.text-div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.text-container{
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    margin-left: 150px;
+    width: 90%;
+}
+
+.text-container h1{
+    color: #025157;
+    margin: 16px;
+    font-size: 42px;
+    font-family: sans-serif;
+
+}
+
+.text-container p{
+    color: black;
+    margin: 16px;
+    font-size: 18px;
+}
+
+.card-div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.card{
+    background-color: #FFFBF7;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.card-img{
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-body{
+    margin: 20px 5px;
+    text-align: left;
+    font-family: sans-serif;
+    padding: 16px;
+    color: black;
+}
+
+.card-body p{
+    margin-top: 24px;
+}
+
+.card-footer{
+    text-align: center;
+    margin: 20px 5px;
+}
+
+.btn-card{
+    background-color:#025157;
+    border-radius: 5px;
+    border: none;
+    color: #FFFBF7;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px;
+    height: 40px;
+    width: 200px;
+    
+}
+
+.card-everly{
+    position: absolute;
+    background-image: url(https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png);
+    background-color: #f9da73;
+    border-radius: 50%;
+    background-size: 80px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    bottom: -200px;
+    right: 350px;
+    height: 100px;
+    width: 100px;
 }
