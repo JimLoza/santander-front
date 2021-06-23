@@ -252,6 +252,8 @@ p {
     background-repeat: no-repeat;
     bottom: -200px;
     right: 350px;
+    /* bottom: 450px;
+    left: 170px; */
     height: 100px;
     width: 100px;
 }
