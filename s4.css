@@ -1,0 +1,42 @@
+.main{
+    display: flex;
+    /* width: 500px; */
+}
+
+.item-1{
+    background-color: coral;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+.item-2{
+    background-color: lightblue;
+    flex-basis: 100px;
+    flex-grow: 2;
+}
+.item-3{
+    background-color: khaki;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+.item-4{
+    background-color: palevioletred;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*repeat(cantidad, tamaño) */
+}
+
+.grid1{
+    background-color: palevioletred;
+}
+
+.grid2{
+    background-color: peru;
+}
+
+.grid3{
+    background-color: purple;
+}
