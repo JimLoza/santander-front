@@ -156,7 +156,6 @@ p {
     background-color: #a1d683;
     display: flex;
     height: 90vh;
-    width: 99vw;
 }
 
 .text-img {
@@ -280,22 +279,96 @@ p {
     height: 50px;
 } */
 
-.features {
+
+/* Sesion 4 */
+
+.cards-section{
     background-color: #025157;
     display: grid;
-    grid-template: repeat(2,330px) / repeat(2, 330px);
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+    gap: 3em;
+    padding: 10%;
+    align-content: center;
 }
 
-.card-features{
-    background-color: white;
-    margin: 36px;
+.cards{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    display: flex;
 }
 
-.card-body-features{
-    background-color: white;
+.cards-text{
+    align-self: center;
+    padding: 30px 20px 40px 40px;
 }
 
-.img-features{
-    width: 100px;
-    height: 100px;
+.cards-img{
+    align-self: center;
+    width: 50%;
+}
+
+
+.cards-icon{
+    max-width: 15%;
+}
+
+.cards-imgs{
+    height: 280px;
+    bottom: 5px;
+    left: 20px;
+    position: relative;
+}
+
+
+/* Otra seccion */
+
+.matcha-work{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5em;
+    padding: 10%;
+}
+
+.matcha-work-container{
+    grid-column: 1/5;
+    justify-self: center;
+}
+
+.card-matcha{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 80%;
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.card-matcha > * {
+    font-family: sans-serif;
+}
+
+.matcha-img img{
+    height: 300px;
+}
+
+.matcha-content{
+    padding: 10px;
+}
+
+.matcha-content h1{
+    text-align: center;
+    color: #025157;
+    font-weight: 700;
+}
+
+.matcha-content p{
+    margin: 30px 10px;
+    color: black;
+}
+
+.publish{
+    color: #67b54b;
+    text-decoration: none;
+    font-weight: 600;
 }
