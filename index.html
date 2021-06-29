@@ -37,33 +37,48 @@
 
     </section>
 
-    <h1>Etiqueta H1</h1>
-    <h2>Etiqueta H2</h2>
-    <h3>Etiqueta H3</h3>
-    <h4>Etiqueta H4</h4>
-    <h5>Etiqueta H5</h5>
-    <h6>Etiqueta H6</h6>
+    <div class="titulos">
+        <h1>Etiqueta H1</h1>
+        <h2>Etiqueta H2</h2>
+        <h3>Etiqueta H3</h3>
+        <h4>Etiqueta H4</h4>
+        <h5>Etiqueta H5</h5>
+        <h6>Etiqueta H6</h6>
+    </div>
 
     <p>Lorem <strong>ipsum dolor</strong> sit amet, consectetur adipisicing elit. Ab velit debitis nulla atque, pariatur
         nam sequi illo
         maxime eligendi quod beatae reprehenderit itaque asperiores expedita magnam consectetur a <b>fuga quasi</b> .
     </p>
     <!-- <input type="text"> -->
-    <form action="">
-        <input type="text" placeholder="Nombre">
-        <br>
-        <input type="text" placeholder="Apellido">
-        <br>
-        <input type="number" placeholder="edad">
-        <br>
-        <input type="email" placeholder="example@gmail.com">
-        <br>
-        <input type="password" placeholder="Contraseña">
-        <br>
-        <button class="btn" type="submit">submit &rarr; </button>
-    </form>
+
+    <article class="form1">
+        <form action="">
+            <div>
+                <input type="text" placeholder="Nombre">
+            </div>
+            <div>
+                <input type="text" placeholder="Apellido">
+            </div>
+            <div>
+                <input type="number" placeholder="edad">
+            </div>
+            <div>
+                <input type="email" placeholder="example@gmail.com">
+            </div>
+            <div>
+                <input type="password" placeholder="Contraseña">
+            </div>
+            <div>
+                <button class="btn" type="submit">submit &rarr; </button>
+            </div>
+        </form>
+    </article>
+
     <br>
-    <img src="capterra.png" alt="capterra img">
+    <figure class="banner">
+        <img src="capterra.png" alt="capterra img">
+    </figure>
 
     <section class="publicitario">
         <div class="video">
@@ -108,10 +123,14 @@
         </div>
         <div class="card-div">
             <div class="card">
-                <div>
+                <div class="img-containers">
                     <img class="card-img"
                         src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
                         alt="adulto con lentes">
+                    <div class="card-everly">
+                        <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
+                            alt="">
+                    </div>
                 </div>
                 <div class="card-body">
                     <h1>Everly</h1>
@@ -126,8 +145,6 @@
                 <div class="card-footer">
                     <button class="btn-card">See Case Study</button>
                 </div>
-                <div class="card-everly">
-                </div>
             </div>
         </div>
     </section>
@@ -141,7 +158,7 @@
                 <p>
                     Publish to your blog in less time than it takes to drink your morning coffee.
                 </p>
-                <a href="#">Publish instantly →</a>
+                <a class="publish" href="#">Publish instantly →</a>
             </div>
             <div class="cards-img">
                 <img class="cards-imgs" src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png"
@@ -157,7 +174,7 @@
                 <p>
                     Publish to your blog in less time than it takes to drink your morning coffee.
                 </p>
-                <a href="#">Publish instantly →</a>
+                <a class="publish" href="#">Publish instantly →</a>
             </div>
             <div class="cards-img">
                 <img class="cards-imgs" src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png"
@@ -173,7 +190,7 @@
                 <p>
                     Publish to your blog in less time than it takes to drink your morning coffee.
                 </p>
-                <a href="#">Publish instantly →</a>
+                <a class="publish" href="#">Publish instantly →</a>
             </div>
             <div class="cards-img">
                 <img class="cards-imgs" src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png"
@@ -189,7 +206,7 @@
                 <p>
                     Publish to your blog in less time than it takes to drink your morning coffee.
                 </p>
-                <a href="#">Publish instantly →</a>
+                <a class="publish" href="#">Publish instantly →</a>
             </div>
             <div class="cards-img">
                 <img class="cards-imgs" src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png"

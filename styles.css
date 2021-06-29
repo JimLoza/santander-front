@@ -71,16 +71,39 @@ li {
     border-radius: 5px;
 }
 
-.navbar>* {
+.navbar > * {
     font-family: sans-serif;
+}
+
+.form1 > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form1 > form > div {
+    margin-top: 10px;
+    height: 50px;
+}
+
+.form1 > form > div > input{
+    width: 100%;
+}
+
+.titulos{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 70px;
 }
 
 h1 {
     /* color: blueviolet; */
+    
 }
 
 h2 {
     color: #46484c;
+    text-align: center;
 }
 
 p {
@@ -155,7 +178,6 @@ p {
 .section-postwork {
     background-color: #a1d683;
     display: flex;
-    height: 90vh;
 }
 
 .text-img {
@@ -240,21 +262,31 @@ p {
     width: 200px;
 }
 
-.card-everly {
-    position: absolute;
-    background-image: url(https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png);
+.img-containers{
+    position: relative;
+}
+
+.img-containers .card-everly {
+    /* background-image: url(https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png); */
     background-color: #f9da73;
     border-radius: 50%;
-    background-size: 80px;
-    background-position: 50%;
     background-repeat: no-repeat;
-    bottom: -200px;
-    right: 350px;
-    /* bottom: 450px;
-    left: 170px; */
     height: 100px;
     width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -40px;
+    left: 150px;
 }
+
+.card-everly img{
+    max-width: 70%;
+    /* max-height: 50px; */
+}
+
 /* 
 .features {
     display: grid;
@@ -279,10 +311,9 @@ p {
     height: 50px;
 } */
 
-
 /* Sesion 4 */
 
-.cards-section{
+.cards-section {
     background-color: #025157;
     display: grid;
     grid-template: repeat(2, 330px) / repeat(2, 1fr);
@@ -291,7 +322,7 @@ p {
     align-content: center;
 }
 
-.cards{
+.cards {
     background-color: #FFFFFF;
     border-radius: 10px;
     /* display: grid;
@@ -299,44 +330,62 @@ p {
     display: flex;
 }
 
-.cards-text{
+.cards-text {
     align-self: center;
     padding: 30px 20px 40px 40px;
 }
 
-.cards-img{
+.cards-img {
     align-self: center;
     width: 50%;
 }
 
-
-.cards-icon{
+.cards-icon {
     max-width: 15%;
 }
 
-.cards-imgs{
+.cards-imgs {
     height: 280px;
     bottom: 5px;
     left: 20px;
     position: relative;
 }
 
-
 /* Otra seccion */
 
-.matcha-work{
+.matcha-work {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .5em;
     padding: 10%;
 }
 
-.matcha-work-container{
+.matcha-work-container {
     grid-column: 1/5;
     justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.card-matcha{
+.matcha-work-container h1 {
+    margin: 20px 10px;
+    font-size: 36px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #025157;;
+}
+
+.matcha-work-container p {
+    color: black;
+    font-family: sans-serif;
+}
+
+.matcha-work-container button{
+    margin: 30px;
+}
+
+.card-matcha {
     border: 1px solid gray;
     border-radius: 5px;
     width: 80%;
@@ -344,31 +393,74 @@ p {
     max-height: 500px;
 }
 
-.card-matcha > * {
+.card-matcha>* {
     font-family: sans-serif;
 }
 
-.matcha-img img{
+.matcha-img img {
     height: 300px;
 }
 
-.matcha-content{
+.matcha-content {
     padding: 10px;
 }
 
-.matcha-content h1{
+.matcha-content h1 {
     text-align: center;
     color: #025157;
     font-weight: 700;
 }
 
-.matcha-content p{
+.matcha-content p {
     margin: 30px 10px;
     color: black;
 }
 
-.publish{
+.publish {
     color: #67b54b;
     text-decoration: none;
     font-weight: 600;
 }
+
+/* Sesion 5 */
+
+/** dispositivos móviles en vista viewport (vertical) */
+
+@media (max-width: 575px) {
+    .navbar, .actions{
+        display: none;
+    }
+
+    .titulos{
+        font-size: 30px;
+        margin-top: 130px;
+    }
+
+    .banner > img{
+        width: 100%;
+    }
+
+    .cards-section {
+        display: grid;
+        grid-template: repeat(1, 330px) / repeat(1, 1fr);
+        overflow: hidden;
+    }
+
+
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/** dispositivos medianos (tablets) */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/** dispositivos grandes (desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+
+@media (min-width: 1200px) {}
