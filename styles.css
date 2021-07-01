@@ -22,6 +22,12 @@ li {
     height: 45px;
 }
 
+.carousel-inner {
+    max-width: 100%;
+    height: 720px;
+    object-fit: cover;
+}
+
 .fixed-header {
     position: fixed;
     background-color: blanchedalmond;
@@ -43,11 +49,11 @@ li {
     width: 15%;
 }
 
-.navbar {
+/* .navbar {
     width: 70%;
     color: #025157;
     text-align: left;
-}
+} */
 
 .actions {
     width: 15%;
@@ -71,35 +77,35 @@ li {
     border-radius: 5px;
 }
 
-.navbar > * {
+.navbar>* {
     font-family: sans-serif;
 }
 
-.form1 > form{
+.form1>form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form1 > form > div {
+.form1>form>div {
     margin-top: 10px;
     height: 50px;
 }
 
-.form1 > form > div > input{
+.form1>form>div>input {
     width: 100%;
 }
 
-.titulos{
+.titulos {
     text-align: center;
     font-size: 60px;
     margin-top: 70px;
 }
-
+/* 
 h1 {
-    /* color: blueviolet; */
-    
-}
+    color: blueviolet;
+} 
+*/
 
 h2 {
     color: #46484c;
@@ -110,14 +116,14 @@ p {
     color: #8b8b8bcc;
 }
 
-.btn {
+/* .btn {
     background-color: #025157;
     background-image: url();
     border: none;
     color: #fff;
     height: 30px;
     border-radius: 5px;
-}
+} */
 
 .publicitario {
     display: flex;
@@ -262,11 +268,11 @@ p {
     width: 200px;
 }
 
-.img-containers{
+.img-containers {
     position: relative;
 }
 
-.img-containers .card-everly {
+.card-everly {
     /* background-image: url(https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png); */
     background-color: #f9da73;
     border-radius: 50%;
@@ -278,11 +284,11 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: -40px;
+    bottom: 200px;
     left: 150px;
 }
 
-.card-everly img{
+.card-everly img {
     max-width: 70%;
     /* max-height: 50px; */
 }
@@ -349,6 +355,7 @@ p {
     bottom: 5px;
     left: 20px;
     position: relative;
+    display: none;
 }
 
 /* Otra seccion */
@@ -373,7 +380,8 @@ p {
     font-size: 36px;
     font-weight: 800;
     font-family: sans-serif;
-    color: #025157;;
+    color: #025157;
+    ;
 }
 
 .matcha-work-container p {
@@ -381,7 +389,7 @@ p {
     font-family: sans-serif;
 }
 
-.matcha-work-container button{
+.matcha-work-container button {
     margin: 30px;
 }
 
@@ -427,26 +435,21 @@ p {
 /** dispositivos móviles en vista viewport (vertical) */
 
 @media (max-width: 575px) {
-    .navbar, .actions{
+    /* .navbar, .actions{
         display: none;
-    }
-
-    .titulos{
+    } */
+    .titulos {
         font-size: 30px;
         margin-top: 130px;
     }
-
-    .banner > img{
+    .banner>img {
         width: 100%;
     }
-
     .cards-section {
         display: grid;
         grid-template: repeat(1, 330px) / repeat(1, 1fr);
         overflow: hidden;
     }
-
-
 }
 
 /** dispositivos pequeños en vista landscape (horizontal) */
